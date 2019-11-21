@@ -1,7 +1,7 @@
 // todo vísa í rétta hluti með import
 import getRandomImage from './nasa-api';
 import { save, load } from './storage';
-import el from './helpers';
+import { el } from './helpers';
 
 // breytur til þess að halda utan um html element nodes
 let title; // titill fyrir mynd á forsíðu
@@ -58,7 +58,7 @@ export default function init(apod) {  /* eslint-disable-line */
 export function loadFavourites() {
   const mainDocument = document.querySelector('main');
   const ourImages = load();
-  ourImages.foreach((obj) => {
+  ourImages.forEach((obj) => {
     const ourTitle = document.createElement('h1');
     ourTitle.textContent = obj.title;
     let ourMedia;
