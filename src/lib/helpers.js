@@ -49,5 +49,5 @@ export function randomDate() {
   const dd = ourDate.getDate();
   const mm = ourDate.getMonth();
   const yyyy = ourDate.getFullYear();
-  return ''.concat(yyyy,'-', mm, '-', dd);
+  return ''.concat(yyyy, '-', mm, '-', dd);
 }
